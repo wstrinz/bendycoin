@@ -10,6 +10,6 @@ contract BendycoinAlpha is StandardToken {
 
   function BendycoinAlpha() public {
     totalSupply = INITIAL_SUPPLY;
-    balances[msg.sender] = INITIAL_SUPPLY;
+    balances[tx.origin] = INITIAL_SUPPLY;
   }
 }
